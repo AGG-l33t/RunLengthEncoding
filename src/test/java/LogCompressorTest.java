@@ -11,7 +11,7 @@ public class LogCompressorTest {
         String compressed = LogCompressor.compressLog(log);
         String decompressed = LogCompressor.decompressLog(compressed);
 
-        // ✅ Always true: correctness
+        // Always true: correctness
         assertEquals(log, decompressed);
     }
 
@@ -22,7 +22,7 @@ public class LogCompressorTest {
 
         System.out.println("Compression ratio: " + ratio);
 
-        // ✅ Efficiency check: ratio should be significantly less than 1
+        // Efficiency check: ratio should be significantly less than 1
         assertTrue(ratio < 0.2, "Compression ratio should be efficient (<20%)");
     }
 
@@ -33,7 +33,7 @@ public class LogCompressorTest {
 
         System.out.println("Compression ratio: " + ratio);
 
-        // ✅ Mixed data may not compress well, but ratio should still be <= 1.5
+        // Mixed data may not compress well, but ratio should still be <= 1.5
         assertTrue(ratio <= 1.5, "Compression ratio should not inflate excessively");
     }
 }

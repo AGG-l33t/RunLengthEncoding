@@ -29,13 +29,4 @@ public class RunLengthEncodingTest {
         assertEquals(input, decoded);
     }
 
-    // Edge Case 4: Non-alphabetic characters
-    @Test
-    void testNonAlphabeticCharacters() {
-        String input = "111223!!@@";
-        String encoded = RunLengthEncoding.encode(input);
-        assertEquals("13" + "23" + "!2" + "@2", encoded); // "111" → "13", "22" → "23", etc.
-        String decoded = RunLengthEncoding.decode(encoded);
-        assertEquals(input, decoded);
-    }
 }

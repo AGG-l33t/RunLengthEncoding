@@ -72,15 +72,15 @@ Benchmarks were executed using **JMH 1.37** on **JDK 21.0.9 (Corretto)**.
 ## 🧪 Next Steps
 - Run with **larger input sizes** to highlight differences more clearly.
 - Add **GC profiling** (`-prof gc`) to measure allocation rates and GC pressure.
+- mvn clean package
+  PS ~\RunLengthEncoding\target> java -jar rle-benchmark-1.0-SNAPSHOT.jar -prof gc
 - Compare with a **char[] buffer implementation** for even lower allocation overhead.
 - Explore **streaming RLE** for chunked data processing in distributed systems.
 
 ---
 
 ## 👨‍💻 Author
-Developed by **Alexandru**  
-Focused on **system design interview prep, performance benchmarking, and robust Java implementations**.
-
+Developed by **Alexandru**
 ---
 
 ## 📜 License

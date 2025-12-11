@@ -41,7 +41,7 @@ public class RunLengthEncoding {
     }
 
     // Alternative implementation using char array for encoding
-    public class RunLengthEncodingCharArray {
+    public static class RunLengthEncodingCharArray {
 
         public static String encode(String str) {
             if (str == null || str.isEmpty()) return "";
